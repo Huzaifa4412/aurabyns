@@ -1,0 +1,54 @@
+.featuresCard {
+  width: 512px;
+  height: 700px;
+  border: 1px solid var(--stoke-gray);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tags {
+  padding: 8px 14px;
+  background-color: var(--gray-box);
+  border: 1px solid var(--stoke-gray);
+  border-radius: 28px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1600px) {
+  .featuresCard {
+    width: 413.33px;
+    height: 630px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .featuresCard {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width:1280px) {
+  .featuresCard {
+    width: 350px;
+    padding-bottom: 30px;
+    padding: 15px;
+    gap: 24px;
+
+    & img {
+      width: 330px;
+      height: 280px;
+    }
+
+    & button {
+      width: 50%;
+      height: max-content;
+      padding: 10px 15px;
+    }
+  }
+}

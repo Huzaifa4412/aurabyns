@@ -1,0 +1,132 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  height: max-content;
+  gap: 80px;
+  height: 820px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .heroSection {
+    height: 622px;
+  }
+}
+
+.leftPart {
+  max-width: 920px;
+  padding-left: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  /* background-color: red; */
+}
+
+.rightPart {
+  width: 920px;
+  height: 820px;
+  display: flex;
+  background: linear-gradient(to top, #1a1a1a00, #1a1a1ab9, #1a1a1a00),
+    url("/hero-abstract-design.png") no-repeat center center/cover;
+
+  & .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .leftPart {
+    width: 690px;
+    padding-left: 80px;
+  }
+
+  .rightPart {
+    width: 690px;
+    height: 622px !important;
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+  .leftPart {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .heroSection {
+    height: 600px;
+    width: 100%;
+    gap: 40px;
+    overflow: hidden;
+  }
+
+  .leftPart {
+    gap: 40px;
+    padding-left: 30px;
+    width: 50%;
+    height: 100%;
+  }
+
+  .rightPart {
+    width: 50%;
+    height: 55px;
+    /* padding: 5px 0px; */
+
+    & .heroImage {
+      width: 100%;
+      height: auto;
+      /* object-fit: contain; */
+    }
+  }
+
+  .leftPart h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heroSection {
+    height: max-content;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .leftPart {
+    padding: 30px;
+    order: 2;
+    width: 100%;
+
+    & h1 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+
+  .rightPart {
+    width: 100%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img.heroImage {
+      height: 100%;
+    }
+  }
+}
+
+/* 
+@media screen and (max-width: 700px) {
+  .featuresWrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+
+  }
+} */
