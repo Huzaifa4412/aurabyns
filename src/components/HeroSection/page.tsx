@@ -26,7 +26,7 @@ const HeroSection = () => {
         </div>
         <div className="buttons-wrapper flex gap-[20px]">
           <Button text="Learn More" color="var(--gray-8)" />
-          <Button text="Browse Properties" color="var(--purple-dark)" />
+          <Button text="Browse Properties" color="var(--golden-dark)" />
         </div>
         <div className={` ${Styles.featuresWrapper} flex gap-[20px] `}>
           <HomeFeatureText text="Happy Customers" numbers="200+" />
