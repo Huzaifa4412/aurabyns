@@ -11,7 +11,7 @@ import gsap from "gsap";
 const Navbar = () => {
   const navRef = useRef(null);
   // Creating Toggle Functionality for navigation
-  const [toggle, setToggle] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   useGSAP(() => {
     gsap.from(navRef.current, {
       y: -80,
@@ -24,8 +24,8 @@ const Navbar = () => {
   });
   return (
     <nav
-      className="bg-[#1A1A1A] flex flex-col max-w-[1920px] m-auto"
       ref={navRef}
+      className="bg-[#1A1A1A] flex flex-col max-w-[1920px] m-auto"
     >
       <div
         className={`${Styles.newsletter} border-b-2 border-[#555] container `}
@@ -35,57 +35,70 @@ const Navbar = () => {
           Where Fragrance Meets Your Soul.
         </h2>
       </div>
-      <div className={`${Styles.navbar} ${toggle && Styles.active}  container`}>
-        <div className={`${Styles.logo} flex items-center justify-center`}>
-          <Link href={"/"}>
-            <Image
-              src="/mainLogo.svg"
-              className="w-[50%]"
-              alt="main-logo"
-              width={30}
-              height={30}
-            />
-          </Link>
+      <nav
+        className="text-white "
+        style={{ backgroundColor: "var(--gray-dark)" }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center h-16">
+          <div className="flex items-center w-[120px] lg:w-[150px]">
+            <Link href="/" className="text-xl font-bold">
+              <Image
+                src={"/mainLogo.svg"}
+                alt="Main Logo"
+                width={150}
+                height={150}
+              />
+            </Link>
+          </div>
+          <div className="hidden duration-1000 items-center md:flex space-x-4 text-xl">
+            <Link href="/" className="hover:text-gray-400">
+              Home
+            </Link>
+            <Link href="/about" className="hover:text-gray-400">
+              About
+            </Link>
+            <Link href="/services" className="hover:text-gray-400">
+              Services
+            </Link>
+            <Link href="/contact" className="hover:text-gray-400">
+              Contact
+            </Link>
+          </div>
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="focus:outline-none"
+            >
+              <span className="sr-only">Open menu</span>
+              <Image
+                src={"menuIcon.svg"}
+                width={50}
+                height={50}
+                alt="Menu_Icon"
+              />
+            </button>
+          </div>
         </div>
-        {toggle ? (
-          <RiCloseLargeFill
-            onClick={() => setToggle(!toggle)}
-            className={` absolute top-[5%] right-[5%] text-5xl  ${Styles.close} `}
-          />
-        ) : (
-          <div className={`${Styles.menuContainer} ${toggle && "hidden"}`}>
-            <Image
-              src={"menuIcon.svg"}
-              alt="MenuIcon"
-              width={60}
-              height={60}
-              onClick={() => setToggle(!toggle)}
-              className={`${Styles.menuIcon}`}
-            />
+        {isOpen && (
+          <div
+            className="md:hidden space-y-2 bg-red-300 duration-1000 p-4 text-xl text-center"
+            style={{ backgroundColor: "var(--gray-dark)" }}
+          >
+            <Link href="/" className="block hover:text-gray-400">
+              Home
+            </Link>
+            <Link href="/about" className="block hover:text-gray-400">
+              About
+            </Link>
+            <Link href="/services" className="block hover:text-gray-400">
+              Services
+            </Link>
+            <Link href="/contact" className="block hover:text-gray-400">
+              Contact
+            </Link>
           </div>
         )}
-        <div className={`${Styles.nav_items} `}>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/ProductsPage">Our Products</Link>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-          </ul>
-        </div>
-        <div className={` ${Styles.contact_us_btn}`}>
-          <a href="#">
-            <Button text="Contact Us" color="#111" />
-          </a>
-        </div>
-      </div>
+      </nav>
     </nav>
   );
 };

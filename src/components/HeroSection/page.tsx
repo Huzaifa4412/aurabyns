@@ -43,13 +43,14 @@ const HeroSection = () => {
           )}
         </div>
       </div>
-      <div className={`${Styles.rightPart} relative`}>
+      <div className={`${Styles.rightPart}`}>
         <Image
           className={`${Styles.heroImage} hero-img object-cover h-full w-full `}
           src="/hero-image-3.jpeg"
           alt="hero-image/perfume"
           width={1000}
           height={1000}
+          // layout="responsive"
         />
       </div>
     </div>
