@@ -23,7 +23,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   z-index: 10;
   height: 99px;
-
 }
 
 .navbar .logo {
@@ -52,16 +51,13 @@
   display: none;
 }
 
-
 @media screen and (max-width: 1280px) {
   .navbar {
     padding: 80px 50px;
-
   }
 }
 
 @media screen and (max-width: 850px) {
-
   .logo img {
     width: 130px !important;
     height: 130px !important;
@@ -102,6 +98,7 @@
     opacity: 1;
     background-color: var(--bg-color-black);
     position: fixed;
+    z-index: 20;
     flex-direction: column;
     transition: 0.5s linear;
     -webkit-transition: 0.5s linear;
@@ -137,11 +134,9 @@
 @media screen and (max-width: 500px) {
   .navbar {
     padding: 15px 30px !important;
-
   }
 
   .contact_us_btn {
     display: none;
   }
-
 }

@@ -20,8 +20,8 @@ import Link from "next/link";
 const FeatureSection = () => {
   return (
     <div className={`${Styles.featureSection} flex flex-col gap-[80px]`}>
-      <div className="heading_part flex justify-between">
-        <div className="content w-[60%]">
+      <div className={`${Styles.heading_part} flex justify-between`}>
+        <div className="content w-full gap-2 mb-5 md:w-[60%]">
           <Image
             src={"/Features_Section/Abstract Design.png"}
             alt={""}
@@ -34,7 +34,7 @@ const FeatureSection = () => {
             details of our exclusive collection.
           </p>
         </div>
-        <div className="button self-end">
+        <div className="button self-end w-full md:w-[300px]">
           <Link href={"/ProductsPage"}>
             <Button text="View All Scents" color="var(--gray-box)" />
           </Link>

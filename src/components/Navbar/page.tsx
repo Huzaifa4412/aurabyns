@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,21 +9,24 @@ import Button from "../Button/page";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Navbar = () => {
+  const navRef = useRef(null);
   // Creating Toggle Functionality for navigation
   const [toggle, setToggle] = useState(false);
   useGSAP(() => {
-    gsap.from(".navbar", {
+    gsap.from(navRef.current, {
       y: -80,
       duration: 0.5,
       delay: 0.5,
       opacity: 0,
       scale: 0.8,
       ease: "circ.inOut",
-      x: -30,
     });
   });
   return (
-    <nav className="bg-[#1A1A1A] navbar flex flex-col max-w-[1920px] m-auto">
+    <nav
+      className="bg-[#1A1A1A] flex flex-col max-w-[1920px] m-auto"
+      ref={navRef}
+    >
       <div
         className={`${Styles.newsletter} border-b-2 border-[#555] container `}
       >

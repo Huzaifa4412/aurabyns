@@ -50,7 +50,6 @@
   }
 }
 
-
 @media screen and (max-width: 1500px) {
   .leftPart {
     padding-left: 80px;
@@ -130,3 +129,26 @@
 
   }
 } */
+
+@media screen and (max-width: 600px) {
+  .heading {
+    text-align: center;
+    font-size: 40px !important;
+    line-height: 55px;
+  }
+  .para {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    text-align: center;
+    font-size: 8vw !important;
+    line-height: 8.5vw !important;
+    line-height: 55px;
+  }
+  .para {
+    font-size: 14px !important;
+  }
+}

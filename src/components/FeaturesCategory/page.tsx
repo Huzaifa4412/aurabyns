@@ -13,19 +13,19 @@ const FeaturesCategory = () => {
       }}
     >
       <FeaturesCategories
-        text="Find your dream property"
+        text="A touch of luxury in every breath"
         path={"/Features_Category/dream_home.svg"}
       />
       <FeaturesCategories
-        text="Unlock Property Value"
+        text="Unlock Premium Level"
         path="/Features_Category/property_value.svg"
       />
       <FeaturesCategories
-        text="Effortless Property Management"
+        text="Be bold. Be timeless. Be you."
         path="/Features_Category/property_management.svg"
       />
       <FeaturesCategories
-        text="Smart Investments, Informed Decisions"
+        text="Awaken the senses, inspire the soul"
         path="/Features_Category/Investment.svg"
       />
     </div>

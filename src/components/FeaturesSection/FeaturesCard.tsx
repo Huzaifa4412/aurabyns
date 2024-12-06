@@ -41,9 +41,13 @@ const FeaturesCard = ({
           </div>
         ))}
       </div>
-      <div className="priceContainer flex gap-[50px] items-center justify-center">
+      <div
+        className={`${Styles.priceContainer} flex gap-[50px] items-center justify-center`}
+      >
         <div className="leftPart w-[30%]">
-          <div className="price originalPrice text-[var(--light-gray)] text-[18px]">
+          <div
+            className={`price ${Styles.originalPrice} text-[var(--light-gray)] text-[18px]`}
+          >
             Original Price
           </div>
           <div className="priceAmount font-semibold line-through text-slate-400 text-[18px]">

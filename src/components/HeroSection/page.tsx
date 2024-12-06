@@ -9,7 +9,9 @@ const HeroSection = () => {
     <div className={`${Styles.heroSection} container `}>
       <div className={`${Styles.leftPart}`}>
         <div className="content">
-          <h1 className="font-semibold text-[55px] leading-[60px] mb-5">
+          <h1
+            className={`font-semibold ${Styles.heading} text-[55px] leading-[60px] mb-5`}
+          >
             Elevate Your Spirit with{" "}
             <span
               style={{ color: "var(--golden-dark)", marginRight: "10px" }}
@@ -19,7 +21,10 @@ const HeroSection = () => {
             </span>
             Fragrances!
           </h1>
-          <p style={{ color: "var(--light-gray)" }}>
+          <p
+            className={`${Styles.para}`}
+            style={{ color: "var(--light-gray)" }}
+          >
             Your journey to finding the perfect property begins here. Explore
             our listings to find the home that matches your dreams.
           </p>
