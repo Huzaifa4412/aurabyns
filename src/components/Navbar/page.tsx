@@ -119,7 +119,7 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              href="/contact"
+              href="/ContactUs"
               className="block hover:text-gray-400 hover:font-extrabold hover:underline"
             >
               Contact
