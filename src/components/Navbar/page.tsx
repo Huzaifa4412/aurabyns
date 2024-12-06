@@ -51,16 +51,28 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden duration-1000 items-center md:flex space-x-4 text-xl">
-            <Link href="/" className="hover:text-gray-400">
+            <Link
+              href="/"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
               Home
             </Link>
-            <Link href="/about" className="hover:text-gray-400">
-              About
+            <Link
+              href="/ProductsPage"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Our Products
             </Link>
-            <Link href="/services" className="hover:text-gray-400">
+            <Link
+              href="/services"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
               Services
             </Link>
-            <Link href="/contact" className="hover:text-gray-400">
+            <Link
+              href="/contact"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
               Contact
             </Link>
           </div>
@@ -70,30 +82,46 @@ const Navbar = () => {
               className="focus:outline-none"
             >
               <span className="sr-only">Open menu</span>
-              <Image
-                src={"menuIcon.svg"}
-                width={50}
-                height={50}
-                alt="Menu_Icon"
-              />
+              {isOpen ? (
+                <RiCloseLargeFill size={30} />
+              ) : (
+                <Image
+                  src={"menuIcon.svg"}
+                  width={50}
+                  height={50}
+                  alt="Menu_Icon"
+                />
+              )}
             </button>
           </div>
         </div>
         {isOpen && (
           <div
-            className="md:hidden space-y-2 bg-red-300 duration-1000 p-4 text-xl text-center"
+            className="md:hidden space-y-2 transition-all duration-1000 p-4 text-xl text-center"
             style={{ backgroundColor: "var(--gray-dark)" }}
           >
-            <Link href="/" className="block hover:text-gray-400">
+            <Link
+              href="/"
+              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
               Home
             </Link>
-            <Link href="/about" className="block hover:text-gray-400">
-              About
+            <Link
+              href="/ProductsPage"
+              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Our Products
             </Link>
-            <Link href="/services" className="block hover:text-gray-400">
+            <Link
+              href="/services"
+              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
               Services
             </Link>
-            <Link href="/contact" className="block hover:text-gray-400">
+            <Link
+              href="/contact"
+              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
               Contact
             </Link>
           </div>
