@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Urbanist } from "next/font/google";
+import Navbar from "@/components/Navbar/page";
 const urbanist = Urbanist({
   subsets: ["latin", "latin-ext"], // Specify character subsets
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`antialiased ${urbanist.className} bg-[#141414]`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

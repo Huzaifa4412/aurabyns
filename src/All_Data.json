@@ -1,15 +1,22 @@
 [
   {
-    "image": "/features/img4.jpg",
+    "image": "/products/img4.jpeg",
     "title": "Travel Spray Set",
     "description": "Escape into a world of fragrance with our travel-sized perfume set, your perfect companion for every adventure",
     "tags": ["BoldScents", "ClassicCologne", "classy"],
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
-
   {
-    "image": "/features/img5.jpg",
+    "image": "/products/img1.jpg",
+    "title": "Pure Oud Spray",
+    "description": "Indulge in the timeless allure of pure oud, a captivating fragrance that travels with you, wherever you go.",
+    "tags": ["CleanFragrance", "AromaticPerfume"],
+    "original_price": "Rs4000",
+    "discounted_price": "Rs2500"
+  },
+  {
+    "image": "/products/img5.jpg",
     "title": "Heer(for her)",
     "description": "Unveil your inner elegance with 'Heer'—a captivating fragrance that embodies grace, strength, and femininity.",
     "tags": ["love", "LuxuryPerfume"],
@@ -17,7 +24,7 @@
     "discounted_price": "Rs2500"
   },
   {
-    "image": "/features/img3.jpg",
+    "image": "/products/img3.jpg",
     "title": "Gentleman",
     "description": "Embrace sophistication and confidence with 'Gentleman'—a fragrance that defines the essence of modern masculinity.",
     "tags": ["ScentOfTheDay", "PerfumeForMen"],
@@ -25,10 +32,18 @@
     "discounted_price": "Rs2500"
   },
   {
-    "image": "/features/img2.jpg",
+    "image": "/products/img2.jpg",
     "title": "Hinata",
     "description": "Unleash your natural beauty and grace with 'Hinata'—a fragrance as delicate and captivating as you are.",
     "tags": ["long lasting", "feminine", "love"],
+    "original_price": "Rs4000",
+    "discounted_price": "Rs2500"
+  },
+  {
+    "image": "/products/img6.jpg",
+    "title": "Naruto",
+    "description": "Let your little one’s adventure begin with 'Naruto'—a fun, energizing fragrance that captures the spirit of imagination and play.",
+    "tags": ["long lasting", "adventure"],
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   }

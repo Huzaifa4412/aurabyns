@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
+import Link from "next/link";
 
 const FeatureSection = () => {
   return (
@@ -34,7 +35,9 @@ const FeatureSection = () => {
           </p>
         </div>
         <div className="button self-end">
-          <Button text="View All Scents" color="var(--gray-box)" />
+          <Link href={"/ProductsPage"}>
+            <Button text="View All Scents" color="var(--gray-box)" />
+          </Link>
         </div>
       </div>
       <div className={`${Styles.featuresCardContainer} grid`}>

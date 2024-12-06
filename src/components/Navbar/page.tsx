@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Styles from "./Navbar.module.css";
+import Link from "next/link";
 import Image from "next/image";
 
 import { RiCloseLargeFill } from "react-icons/ri";
@@ -21,7 +22,7 @@ const Navbar = () => {
         </h2>
       </div>
       <div className={`${Styles.navbar} ${toggle && Styles.active}  container`}>
-        <div className={`${Styles.logo}`}>
+        <div className={`${Styles.logo} flex items-center justify-center`}>
           <Image
             src="/mainLogo.svg"
             className="w-[50%]"
@@ -43,20 +44,20 @@ const Navbar = () => {
               width={60}
               height={60}
               onClick={() => setToggle(!toggle)}
-              className={` ${Styles.menuIcon}`}
+              className={`${Styles.menuIcon}`}
             />
           </div>
         )}
         <div className={`${Styles.nav_items} `}>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/ProductsPage">Our Products</Link>
             </li>
             <li>
               <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Properties</a>
             </li>
             <li>
               <a href="#">Services</a>

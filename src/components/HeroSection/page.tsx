@@ -15,7 +15,7 @@ const HeroSection = () => {
               style={{ color: "var(--golden-dark)", marginRight: "10px" }}
               className="font-extrabold capitalize"
             >
-              Aurabyns
+              AuraByNs
             </span>
             Fragrances!
           </h1>
@@ -31,12 +31,11 @@ const HeroSection = () => {
         <div className={` ${Styles.featuresWrapper} flex gap-[20px] `}>
           <HomeFeatureText text="Happy Customers" numbers="200+" />
           <HomeFeatureText text="Properties for Clients" numbers="100+" />
-          {typeof window !== "undefined" && window.innerWidth > 480 ? (
-            <HomeFeatureText
-              text="Smart Investments, Informed DecisionsYears of Experience"
-              numbers="10+"
-            />
-          ) : null}
+          {typeof window !== "undefined" && window.innerWidth > 500 ? (
+            <HomeFeatureText text="Experience" numbers="10+" />
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className={`${Styles.rightPart} relative`}>
