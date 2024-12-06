@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import { Urbanist } from "next/font/google";
 import Navbar from "@/components/Navbar/page";
 const urbanist = Urbanist({
@@ -22,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="mainLogo.svg" type="image/x-icon" />
       </head>
       <body
         suppressHydrationWarning

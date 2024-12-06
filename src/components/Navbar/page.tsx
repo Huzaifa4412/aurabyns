@@ -6,13 +6,24 @@ import Image from "next/image";
 
 import { RiCloseLargeFill } from "react-icons/ri";
 import Button from "../Button/page";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 const Navbar = () => {
   // Creating Toggle Functionality for navigation
   const [toggle, setToggle] = useState(false);
-
+  useGSAP(() => {
+    gsap.from(".navbar", {
+      y: -80,
+      duration: 0.5,
+      delay: 0.5,
+      opacity: 0,
+      scale: 0.8,
+      ease: "circ.inOut",
+      x: -30,
+    });
+  });
   return (
-    <nav className="bg-[#1A1A1A] flex flex-col max-w-[1920px] m-auto">
+    <nav className="bg-[#1A1A1A] navbar flex flex-col max-w-[1920px] m-auto">
       <div
         className={`${Styles.newsletter} border-b-2 border-[#555] container `}
       >
@@ -23,13 +34,15 @@ const Navbar = () => {
       </div>
       <div className={`${Styles.navbar} ${toggle && Styles.active}  container`}>
         <div className={`${Styles.logo} flex items-center justify-center`}>
-          <Image
-            src="/mainLogo.svg"
-            className="w-[50%]"
-            alt="main-logo"
-            width={30}
-            height={30}
-          />
+          <Link href={"/"}>
+            <Image
+              src="/mainLogo.svg"
+              className="w-[50%]"
+              alt="main-logo"
+              width={30}
+              height={30}
+            />
+          </Link>
         </div>
         {toggle ? (
           <RiCloseLargeFill
