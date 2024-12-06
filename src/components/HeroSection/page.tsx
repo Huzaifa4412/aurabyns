@@ -46,9 +46,9 @@ const HeroSection = () => {
           ) : null}
         </div>
       </div>
-      <div className={`${Styles.rightPart}`}>
+      <div className={`${Styles.rightPart} rounded-2xl`}>
         <Image
-          className={`${Styles.heroImage} hero-img object-cover h-full w-full `}
+          className={`${Styles.heroImage} rounded-xl object-cover h-full w-full `}
           src="/hero-image-3.jpeg"
           alt="hero-image/perfume"
           width={1000}
