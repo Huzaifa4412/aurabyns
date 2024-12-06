@@ -1,41 +1,3 @@
-// import React from "react";
-// import Styles from "./contactUs.module.css";
-// import Image from "next/image";
-
-// const page = () => {
-//   return (
-//     <div className={`${Styles.contactUs} container`}>
-//       <Image
-//         src={"/Abstract_Design.png"}
-//         alt={""}
-//         width={80}
-//         height={50}
-//         className={"w-[80px]"}
-//       />
-//       <div className={`${Styles.content} flex flex-col`}>
-//         <h2 className="text-[48px] font-semibold">
-//           Let &apos;s Make it Happen
-//         </h2>
-//         <p className="w-[70%]" style={{ color: "var(--light-gray)" }}>
-//           Ready to take the first step toward your dream property? Fill out the
-//           form below, and our real estate wizards will work their magic to find
-//           your perfect match. Don't wait; let's embark on this exciting journey
-//           together.
-//         </p>
-//       </div>
-//       <div className="form">
-//         <input type="text" placeholder="Your Name" />
-//         <input type="email" placeholder="Your Email" />
-//         <input type="text" placeholder="Phone Number" />
-//         <textarea placeholder="Your Message" />
-//         <button className="submit-btn">Submit</button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default page;
-
 "use client";
 
 import Image from "next/image";
@@ -89,13 +51,22 @@ export default function SimpleContactForm() {
           className={"w-[80px] self-start"}
         />
         <h2 className="text-[48px] font-semibold">
-          Let &apos;s Make it Happen
+          We’d Love to Hear From You!
         </h2>
         <p className="w-[70%]" style={{ color: "var(--light-gray)" }}>
-          Ready to take the first step toward your dream property? Fill out the
-          form below, and our real estate wizards will work their magic to find
-          your perfect match. Don&apos;t wait; let&apos;s embark on this
-          exciting journey together.
+          At{" "}
+          <span
+            className="font-semibold text-xl"
+            style={{ color: "var(--golden-dark)" }}
+          >
+            Aura by NS
+          </span>
+          , we believe that every fragrance tells a story, and we’re here to
+          help you write yours. Whether you have a question, need assistance, or
+          simply want to share your experience with our scents, we’re always
+          happy to connect. Please reach out to us through the form below, and
+          our dedicated team will respond promptly. Let’s create lasting
+          impressions together.
         </p>
       </div>
       <div className="w-full max-w-4xl">
