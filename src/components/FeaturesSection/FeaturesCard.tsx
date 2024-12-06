@@ -59,7 +59,7 @@ const FeaturesCard = ({
           </div>
         </div>
         <div className={` ${Styles.button} rightPart w-full`}>
-          <Button text="View Properties Details" color="var(--golden-dark)" />
+          <Button text="Order Now" color="var(--golden-dark)" />
         </div>
       </div>
     </div>

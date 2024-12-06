@@ -27,16 +27,14 @@ const FeatureSection = () => {
             width={80}
             height={50}
           />
-          <h2 className="text-[48px] font-semibold">Featured Fragments</h2>
+          <h2 className="text-[48px] font-semibold">Featured Fragrances.</h2>
           <p style={{ color: "var(--light-gray)", fontSize: "18px" }}>
-            Explore our handpicked selection of featured properties. Each
-            listing offers a glimpse into exceptional homes and investments
-            available through Al Wahhab properties. Click &quot;View
-            Details&quot; for more information.
+            Discover the perfect scent for you—click here to explore the full
+            details of our exclusive collection.
           </p>
         </div>
         <div className="button self-end">
-          <Button text="View All Properties" color="var(--gray-box)" />
+          <Button text="View All Scents" color="var(--gray-box)" />
         </div>
       </div>
       <div className={`${Styles.featuresCardContainer} grid`}>
