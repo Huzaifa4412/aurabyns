@@ -31,7 +31,7 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="buttons-wrapper flex gap-[20px]">
-          <Link href={"/"} className="w-[50%]">
+          <Link href={"/ContactUs"} className="w-[50%]">
             <Button text="Learn More" color="var(--gray-8)" />
           </Link>
           <Link href="/ProductsPage" className="w-[50%]">
