@@ -13,6 +13,7 @@ const FeaturesCard = ({
     description: string;
     tags: string[];
     discounted_price: string;
+    original_price: string;
   };
   index: number;
 }) => {
@@ -42,16 +43,16 @@ const FeaturesCard = ({
       </div>
       <div className="priceContainer flex gap-[50px] items-center justify-center">
         <div className="leftPart w-[30%]">
-          <div className="price text-[var(--light-gray)] text-[18px]">
-            Price
+          <div className="price originalPrice text-[var(--light-gray)] text-[18px]">
+            Original Price
           </div>
-          <div className="priceAmount font-semibold text-[24px]">
-            {item.discounted_price}
+          <div className="priceAmount font-semibold line-through text-slate-400 text-[18px]">
+            {item.original_price}
           </div>
         </div>
         <div className="leftPart w-[30%]">
-          <div className="price originalPrice text-[var(--light-gray)] text-[18px]">
-            Original Price
+          <div className="price text-[var(--light-gray)] text-[18px]">
+            Price
           </div>
           <div className="priceAmount font-semibold text-[24px]">
             {item.discounted_price}

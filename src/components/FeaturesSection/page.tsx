@@ -27,7 +27,7 @@ const FeatureSection = () => {
             width={80}
             height={50}
           />
-          <h2 className="text-[48px] font-semibold">Featured Properties</h2>
+          <h2 className="text-[48px] font-semibold">Featured Fragments</h2>
           <p style={{ color: "var(--light-gray)", fontSize: "18px" }}>
             Explore our handpicked selection of featured properties. Each
             listing offers a glimpse into exceptional homes and investments
