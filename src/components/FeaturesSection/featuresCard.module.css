@@ -29,11 +29,9 @@
   .featuresCard {
     width: 100%;
   }
-
-
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1370px) {
   .featuresCard {
     width: 350px;
     padding-bottom: 30px;
@@ -42,6 +40,28 @@
 
     & img {
       width: 330px;
+      height: 280px;
+    }
+
+    & button {
+      width: 50%;
+      height: max-content;
+      padding: 10px 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .featuresCard {
+    width: 330px;
+    padding-bottom: 30px;
+    padding: 15px;
+    gap: 20px;
+    & h3 {
+      font-size: 14px !important;
+    }
+    & img {
+      width: 280px;
       height: 280px;
     }
 

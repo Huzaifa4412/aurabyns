@@ -31,14 +31,19 @@ const HeroSection = () => {
         <div className={` ${Styles.featuresWrapper} flex gap-[20px] `}>
           <HomeFeatureText text="Happy Customers" numbers="200+" />
           <HomeFeatureText text="Properties for Clients" numbers="100+" />
-          <HomeFeatureText text="Years of Experience" numbers="10+" />
+          {typeof window !== "undefined" && window.innerWidth > 480 ? (
+            <HomeFeatureText
+              text="Smart Investments, Informed DecisionsYears of Experience"
+              numbers="10+"
+            />
+          ) : null}
         </div>
       </div>
       <div className={`${Styles.rightPart} relative`}>
         <Image
           className={`${Styles.heroImage} hero-img object-cover h-full w-full `}
-          src="/hero-image.jpeg"
-          alt="hero-image/building"
+          src="/hero-image-3.jpeg"
+          alt="hero-image/perfume"
           width={1000}
           height={1000}
         />

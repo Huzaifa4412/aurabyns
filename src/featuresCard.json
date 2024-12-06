@@ -11,7 +11,7 @@
     "image": "/Card_features/img5.jpg",
     "title": "Pure Oud Spray",
     "description": "Indulge in the timeless allure of pure oud, a captivating fragrance that travels with you, wherever you go.",
-    "tags": ["purity", "CleanFragrance", "AromaticPerfume"],
+    "tags": ["purity", "CleanFragrance"],
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
@@ -19,7 +19,7 @@
     "image": "/Card_features/img6.jpg",
     "title": "Heer(for her)",
     "description": "Unveil your inner elegance with 'Heer'—a captivating fragrance that embodies grace, strength, and femininity.",
-    "tags": ["love", "DesignerFragrance", "LuxuryPerfume"],
+    "tags": ["love", "LuxuryPerfume"],
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
@@ -27,7 +27,7 @@
     "image": "/Card_features/img10.jpg",
     "title": "Gentleman",
     "description": "Embrace sophistication and confidence with 'Gentleman'—a fragrance that defines the essence of modern masculinity.",
-    "tags": ["ScentOfTheDay", "MasculineEssence", "PerfumeForMen"],
+    "tags": ["ScentOfTheDay", "PerfumeForMen"],
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
