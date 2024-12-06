@@ -25,7 +25,7 @@ const FeaturesCard = ({
       <Image
         src={item.image}
         alt={item.title}
-        className="rounded-[10px]"
+        className="rounded-[10px] w-[432px] h-[318px] object-cover"
         width={432}
         height={318}
       />
@@ -44,6 +44,14 @@ const FeaturesCard = ({
         <div className="leftPart w-[30%]">
           <div className="price text-[var(--light-gray)] text-[18px]">
             Price
+          </div>
+          <div className="priceAmount font-semibold text-[24px]">
+            {item.discounted_price}
+          </div>
+        </div>
+        <div className="leftPart w-[30%]">
+          <div className="price originalPrice text-[var(--light-gray)] text-[18px]">
+            Original Price
           </div>
           <div className="priceAmount font-semibold text-[24px]">
             {item.discounted_price}
