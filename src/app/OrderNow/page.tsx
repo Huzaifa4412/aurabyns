@@ -1,7 +1,6 @@
 "use client";
-
 import { useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 
 export default function OrderNowForm() {
   const [formData, setFormData] = useState({
@@ -16,7 +15,27 @@ export default function OrderNowForm() {
     specialInstructions: "",
     terms: false,
   });
-  const searchParam = useSearchParams();
+
+  function ProductName() {
+    const searchParam = useSearchParams();
+    return (
+      <div>
+        <label htmlFor="fullName" className="block text-white mb-2">
+          Product Name
+        </label>
+        <input
+          type="text"
+          id="productName"
+          name="productName"
+          value={searchParam.get("title") || ""}
+          readOnly
+          onChange={handleChange}
+          className="w-full bg-zinc-900 border border-zinc-800 text-white rounded-md px-4 py-3"
+          required
+        />
+      </div>
+    );
+  }
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -61,21 +80,9 @@ export default function OrderNowForm() {
                 required
               />
             </div>
-            <div>
-              <label htmlFor="fullName" className="block text-white mb-2">
-                Product Name
-              </label>
-              <input
-                type="text"
-                id="productName"
-                name="productName"
-                value={searchParam.get("title") || ""}
-                readOnly
-                onChange={handleChange}
-                className="w-full bg-zinc-900 border border-zinc-800 text-white rounded-md px-4 py-3"
-                required
-              />
-            </div>
+            <Suspense>
+              <ProductName />
+            </Suspense>
             <div>
               <label htmlFor="email" className="block text-white mb-2">
                 Email

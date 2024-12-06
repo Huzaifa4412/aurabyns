@@ -40,7 +40,7 @@ export default function SimpleContactForm() {
   return (
     <div
       style={{ backgroundColor: "var(--gray-dark)" }}
-      className="min-h-scree p-4  sm:p-6 flex flex-col gap-12 items-center justify-center"
+      className="min-h-scree p-4 sm:p-6 flex flex-col gap-12 items-center justify-center"
     >
       <div className={`${Styles.content} flex flex-col my-12`}>
         <Image
@@ -50,14 +50,14 @@ export default function SimpleContactForm() {
           height={50}
           className={"w-[80px] self-start"}
         />
-        <h2 className="text-[48px] font-semibold">
+        <h2 className="md:text-[48px] text-[35px] font-semibold">
           We’d Love to Hear From You!
         </h2>
-        <p className="w-[70%]" style={{ color: "var(--light-gray)" }}>
+        <p className="lg:w-[70%] w-full" style={{ color: "var(--light-gray)" }}>
           At{" "}
           <span
             className="font-semibold text-xl"
-            style={{ color: "var(--golden-dark)" }}
+            style={{ color: "var(--golden-dark) " }}
           >
             Aura by NS
           </span>
