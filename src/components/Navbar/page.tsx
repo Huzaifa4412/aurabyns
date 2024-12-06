@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Navbar = () => {
   const navRef = useRef(null);
+
   // Creating Toggle Functionality for navigation
   const [isOpen, setIsOpen] = useState(false);
   useGSAP(() => {

@@ -62,7 +62,19 @@
     padding: 15px 30px !important;
   }
 
+  .newsletter {
+    font-size: 12px !important;
+  }
+
   .contact_us_btn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #111;
   }
 }
