@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Styles from "./Navbar.module.css";
 import Image from "next/image";
@@ -23,7 +22,13 @@ const Navbar = () => {
       </div>
       <div className={`${Styles.navbar} ${toggle && Styles.active}  container`}>
         <div className={`${Styles.logo}`}>
-          <Image src="/logo.jpeg" alt="main-logo" width={50} height={50} />
+          <Image
+            src="/mainLogo.svg"
+            className="w-[50%]"
+            alt="main-logo"
+            width={30}
+            height={30}
+          />
         </div>
         {toggle ? (
           <RiCloseLargeFill

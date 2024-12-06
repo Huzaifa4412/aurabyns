@@ -12,7 +12,7 @@ const FeaturesCard = ({
     title: string;
     description: string;
     tags: string[];
-    price: string;
+    discounted_price: string;
   };
   index: number;
 }) => {
@@ -46,7 +46,7 @@ const FeaturesCard = ({
             Price
           </div>
           <div className="priceAmount font-semibold text-[24px]">
-            {item.price}
+            {item.discounted_price}
           </div>
         </div>
         <div className={` ${Styles.button} rightPart w-full`}>
