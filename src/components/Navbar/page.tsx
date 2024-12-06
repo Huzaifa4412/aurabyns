@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { RiCloseLargeFill } from "react-icons/ri";
-import Button from "../Button/page";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Navbar = () => {
