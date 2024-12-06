@@ -36,13 +36,6 @@ const HeroSection = () => {
       </div>
       <div className={`${Styles.rightPart} relative`}>
         <Image
-          className="design absolute top-[10%] left-[-10%] w-[8vw] aspect-square object-cover"
-          src={"/home-page-design.png"}
-          alt="hero-image/Discover Design. "
-          width={180}
-          height={180}
-        />
-        <Image
           className={`${Styles.heroImage} hero-img object-cover h-full w-full `}
           src="/hero-image.jpeg"
           alt="hero-image/building"

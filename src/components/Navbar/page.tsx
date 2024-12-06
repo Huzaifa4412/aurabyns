@@ -17,17 +17,13 @@ const Navbar = () => {
         className={`${Styles.newsletter} border-b-2 border-[#555] container `}
       >
         <h2 className="text-center">
-          ✨Discover Your Dream Property with Al Wahhab properties.
+          ✨<span style={{ color: "var(--golden-dark)" }}>AuraByNs</span> –
+          Where Fragrance Meets Your Soul.
         </h2>
       </div>
       <div className={`${Styles.navbar} ${toggle && Styles.active}  container`}>
         <div className={`${Styles.logo}`}>
-          <Image
-            src="/sample-logo.svg"
-            alt="main-logo"
-            width={50}
-            height={50}
-          />
+          <Image src="/logo.jpeg" alt="main-logo" width={50} height={50} />
         </div>
         {toggle ? (
           <RiCloseLargeFill

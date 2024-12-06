@@ -9,8 +9,8 @@ const urbanist = Urbanist({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "Al Wahhab properties",
-  description: "Al Wahhab properties where the deal that you can trust.",
+  title: "Aura by NS ",
+  description: "AuraByNs – Unveil Your Essence, Embrace the Scent of Luxury.",
 };
 
 export default function RootLayout({
