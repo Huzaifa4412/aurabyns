@@ -87,14 +87,14 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
           {/* Copyright */}
-          <p className="mb-4 sm:mb-0 text-xl ml-10 w-1/3">
+          <p className="mb-4 sm:mb-0 text-xl ml-10 lg:w-1/3">
             &copy; {new Date().getFullYear()} AuraByNS. All rights reserved.
           </p>
-          <p className="mb-4 sm:mb-0 text-xl ml-10 w-1/3">
+          <p className="mb-4 sm:mb-0 text-xl ml-10 lg:w-1/3">
             &copy; {new Date().getFullYear()}💓 Love by Al Wahhab Agency.
           </p>
           {/* Social Media Links */}
-          <div className="flex space-x-4 w-1/3 justify-end">
+          <div className="flex space-x-4 lg:w-1/3 justify-end">
             <Link
               href="https://www.facebook.com/share/KsFYCPVx28QBsSX1/?mibextid=LQQJ4d"
               target="_blank"
