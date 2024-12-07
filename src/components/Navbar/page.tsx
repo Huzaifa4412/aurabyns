@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="bg-[#1A1A1A] flex flex-col max-w-[1920px] m-auto"
+      className="bg-[#1A1A1A] relative top-0 left-0 right-0 z-[99999] flex flex-col max-w-[1920px] m-auto"
     >
       <div
         className={`${Styles.newsletter} border-b-2 border-[#555] container `}

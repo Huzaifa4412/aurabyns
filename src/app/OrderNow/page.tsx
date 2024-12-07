@@ -60,7 +60,7 @@ export default function OrderNowForm() {
           Order Now
         </h2>
         <form
-          action="https://formspree.io/f/mwpkjpwl"
+          action="https://formspree.io/f/xyzyazol"
           method="POST"
           className="space-y-8"
         >
@@ -200,19 +200,6 @@ export default function OrderNowForm() {
                   required
                 />
                 <span className="ml-2 text-white">Cash on Delivery</span>
-              </label>
-              <label className="inline-flex items-center">
-                <input
-                  type="radio"
-                  name="paymentMethod"
-                  value="easy paisa"
-                  id="easyPaisa"
-                  checked={formData.paymentMethod === "easy paisa"}
-                  onChange={handleChange}
-                  className="form-radio text-purple-600"
-                  required
-                />
-                <span className="ml-2 text-white">Easy Paisa</span>
               </label>
             </div>
           </div>

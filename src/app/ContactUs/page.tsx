@@ -66,7 +66,7 @@ export default function SimpleContactForm() {
       <div className="w-full max-w-4xl">
         <form
           className="space-y-6"
-          action="https://formspree.io/f/mzzbqbwb"
+          action="https://formspree.io/f/xgvebvdj"
           method="POST"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">

@@ -14,9 +14,10 @@ const Footer = () => {
           <div>
             <h1 className="text-2xl font-bold mb-4">AuraByNs</h1>
             <p className="text-gray-400 text-sm">
-              Aura By NS provides innovative solutions that empower businesses
-              to succeed. We bring quality, dedication, and expertise to
-              everything we do.
+              At Aura by NS, we create luxurious perfumes that express
+              individuality. Crafted with care, our scents evoke emotions and
+              memories, blending timeless elegance with modern sophistication.
+              Discover your signature fragrance with Aura by NS.
             </p>
           </div>
 
