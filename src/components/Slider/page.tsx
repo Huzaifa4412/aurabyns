@@ -110,7 +110,7 @@ export default function App() {
           <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
             <Image
               src="/banner2.jpg"
-              alt="Banner 3"
+              alt="Banner 2"
               layout="fill"
               objectFit="cover"
               className="absolute inset-0 cursor-grab"
@@ -121,7 +121,7 @@ export default function App() {
         <SwiperSlide>
           <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
             <Image
-              src="/banner00.jpeg"
+              src="/banner3.jpeg"
               alt="Banner 3"
               layout="fill"
               objectFit="cover"
