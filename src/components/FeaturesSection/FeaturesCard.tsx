@@ -3,6 +3,7 @@ import Styles from "./featuresCard.module.css";
 import Image from "next/image";
 
 import Button from "../Button/page";
+import Link from "next/link";
 const FeaturesCard = ({
   item,
   index,
@@ -63,7 +64,14 @@ const FeaturesCard = ({
           </div>
         </div>
         <div className={` ${Styles.button} rightPart w-full`}>
-          <Button text="Order Now" color="var(--golden-dark)" />
+          <Link
+            href={{
+              pathname: "/OrderNow",
+              query: { title: item.title.trim(), id: index },
+            }}
+          >
+            <Button text="Order Now" color="var(--golden-dark)" />
+          </Link>
         </div>
       </div>
     </div>
