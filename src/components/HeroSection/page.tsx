@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className={`${Styles.leftPart}`}>
         <div className="content">
           <h1
-            className={`font-semibold ${Styles.heading} text-[55px] leading-[60px] mb-5`}
+            className={`font-semibold heading ${Styles.heading} text-[55px] leading-[60px] mb-5`}
           >
             Elevate Your Spirit with{" "}
             <span
@@ -23,7 +23,7 @@ const HeroSection = () => {
             Fragrances!
           </h1>
           <p
-            className={`${Styles.para}`}
+            className={`${Styles.para} para`}
             style={{ color: "var(--light-gray)" }}
           >
             Your journey to finding the perfect Perfume end here. Explore our

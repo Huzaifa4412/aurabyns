@@ -9,7 +9,6 @@ export default function OrderNowForm() {
     productName: "",
     phone: "",
     whatsappNumber: "",
-    cashOnDelivery: "",
     quantity: "",
     shippingAddress: "",
     paymentMethod: "",
@@ -206,14 +205,14 @@ export default function OrderNowForm() {
                 <input
                   type="radio"
                   name="paymentMethod"
-                  value="easy passa"
-                  id="easyPassa"
-                  checked={formData.paymentMethod === "easy passa"}
+                  value="easy paisa"
+                  id="easyPaisa"
+                  checked={formData.paymentMethod === "easy paisa"}
                   onChange={handleChange}
                   className="form-radio text-purple-600"
                   required
                 />
-                <span className="ml-2 text-white">Easy Passa</span>
+                <span className="ml-2 text-white">Easy Paisa</span>
               </label>
             </div>
           </div>

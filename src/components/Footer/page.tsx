@@ -87,13 +87,18 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
           {/* Copyright */}
-          <p className="mb-4 sm:mb-0 text-xl ml-10">
+          <p className="mb-4 sm:mb-0 text-xl ml-10 w-1/3">
             &copy; {new Date().getFullYear()} AuraByNS. All rights reserved.
           </p>
-
+          <p className="mb-4 sm:mb-0 text-xl ml-10 w-1/3">
+            &copy; {new Date().getFullYear()}💓 Love by Al Wahhab Agency.
+          </p>
           {/* Social Media Links */}
-          <div className="flex space-x-4">
-            <Link href="https://facebook.com" target="_blank">
+          <div className="flex space-x-4 w-1/3 justify-end">
+            <Link
+              href="https://www.facebook.com/share/KsFYCPVx28QBsSX1/?mibextid=LQQJ4d"
+              target="_blank"
+            >
               <FaFacebook
                 className="hover:text-gray-300 cursor-pointer"
                 size={20}
@@ -105,7 +110,10 @@ const Footer = () => {
                 size={20}
               />
             </Link>
-            <Link href="https://instagram.com" target="_blank">
+            <Link
+              href="https://www.instagram.com/aurabyns?igsh=enYycTJnaTg2amdq"
+              target="_blank"
+            >
               <FaInstagram
                 className="hover:text-gray-300 cursor-pointer"
                 size={20}

@@ -21,7 +21,15 @@ const Navbar = () => {
       scale: 0.8,
       ease: "circ.inOut",
     });
+    gsap.from(".nav-items", {
+      opacity: 0,
+      scale: 0.5,
+      x: 3000,
+      duration: 1,
+      ease: "bounce",
+    });
   });
+
   return (
     <nav
       ref={navRef}
@@ -50,7 +58,7 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="hidden duration-1000 items-center md:flex space-x-4 text-xl">
+          <div className="hidden nav-items duration-1000 items-center md:flex space-x-4 text-xl">
             <Link
               href="/"
               className="hover:text-gray-400 hover:font-extrabold hover:underline"
@@ -62,12 +70,6 @@ const Navbar = () => {
               className="hover:text-gray-400 hover:font-extrabold hover:underline"
             >
               Our Products
-            </Link>
-            <Link
-              href="/services"
-              className="hover:text-gray-400 hover:font-extrabold hover:underline"
-            >
-              Services
             </Link>
             <Link
               href="/ContactUs"
@@ -113,13 +115,8 @@ const Navbar = () => {
               Our Products
             </Link>
             <Link
-              href="/services"
-              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
-            >
-              Services
-            </Link>
-            <Link
-              href="/ContactUs"
+              href="/ContactUs
+              "
               className="block hover:text-gray-400 hover:font-extrabold hover:underline"
             >
               Contact
