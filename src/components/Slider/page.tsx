@@ -97,7 +97,7 @@ export default function App() {
         <SwiperSlide>
           <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
             <Image
-              src="/banner4.jpeg"
+              src="/banner1.jpeg"
               alt="Banner 1"
               layout="fill"
               objectFit="cover"
@@ -109,7 +109,7 @@ export default function App() {
         <SwiperSlide>
           <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
             <Image
-              src="/banner2.jpg"
+              src="/banner2.jpeg"
               alt="Banner 2"
               layout="fill"
               objectFit="cover"
