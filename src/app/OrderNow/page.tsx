@@ -60,7 +60,7 @@ export default function OrderNowForm() {
           Order Now
         </h2>
         <form
-          action="https://formspree.io/f/mgveqjrk"
+          action="https://formspree.io/f/mwpkjpwl"
           method="POST"
           className="space-y-8"
         >

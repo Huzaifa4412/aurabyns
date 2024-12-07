@@ -40,7 +40,7 @@ const FeatureSection = () => {
           </Link>
         </div>
       </div>
-      <div className={`${Styles.featuresCardContainer} grid`}>
+      <div className={`${Styles.featuresCardContainer}  mb-12 grid`}>
         {/* Swiper Js Power ------------------------------------------------------------------------ */}
         <Swiper
           effect={"coverflow"}
