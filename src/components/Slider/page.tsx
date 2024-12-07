@@ -122,7 +122,7 @@ export default function App() {
           <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
             <Image
               src="/banner3.jpeg"
-              alt="Banner 3"
+              alt="Banner3"
               layout="fill"
               objectFit="cover"
               className="absolute inset-0 cursor-grab"
