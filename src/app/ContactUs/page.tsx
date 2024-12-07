@@ -31,12 +31,6 @@ export default function SimpleContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log(formData);
-    // Here you would typically send the data to your server
-  };
-
   return (
     <div
       style={{ backgroundColor: "var(--gray-dark)" }}
@@ -70,7 +64,11 @@ export default function SimpleContactForm() {
         </p>
       </div>
       <div className="w-full max-w-4xl">
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form
+          className="space-y-6"
+          action="https://formspree.io/f/mzzbqbwb"
+          method="POST"
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div>
               <label htmlFor="firstName" className="block text-white mb-2">
@@ -133,7 +131,7 @@ export default function SimpleContactForm() {
               />
             </div>
             <div>
-              <label htmlFor="location" className="block text-white mb-2">
+              <label htmlFor="gender" className="block text-white mb-2">
                 Preferred For
               </label>
               <select
@@ -145,9 +143,9 @@ export default function SimpleContactForm() {
                 required
               >
                 <option value="">Select Type</option>
-                <option value="downtown">Male</option>
-                <option value="suburb">Female</option>
-                <option value="rural">Children</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Children">Children</option>
               </select>
             </div>
 

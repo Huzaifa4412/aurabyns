@@ -3,6 +3,7 @@ import "./globals.css";
 import { Urbanist } from "next/font/google";
 import Navbar from "@/components/Navbar/page";
 import WhatsappIcon from "../components/Whatsapp/WhatsappIcon";
+import Footer from "@/components/Footer/page";
 const urbanist = Urbanist({
   subsets: ["latin", "latin-ext"], // Specify character subsets
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Navbar />
         <WhatsappIcon />
         {children}
+        <Footer />
       </body>
     </html>
   );

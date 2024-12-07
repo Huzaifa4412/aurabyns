@@ -9,6 +9,7 @@ export default function OrderNowForm() {
     productName: "",
     phone: "",
     whatsappNumber: "",
+    cashOnDelivery: "",
     quantity: "",
     shippingAddress: "",
     paymentMethod: "",
@@ -187,6 +188,19 @@ export default function OrderNowForm() {
                   required
                 />
                 <span className="ml-2 text-white">Jazz Cash</span>
+              </label>
+              <label className="inline-flex items-center">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  value="Cash on Delivery"
+                  checked={formData.paymentMethod === "Cash on Delivery"}
+                  onChange={handleChange}
+                  className="form-radio text-purple-600"
+                  id="cashOnDelivery"
+                  required
+                />
+                <span className="ml-2 text-white">Cash on Delivery</span>
               </label>
               <label className="inline-flex items-center">
                 <input

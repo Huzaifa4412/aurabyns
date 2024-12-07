@@ -1,50 +1,56 @@
 [
   {
-    "image": "/products/img4.jpeg",
-    "title": "Travel Spray Set",
+    "image": "/products/img2.jpg",
+    "title": "Travel Spray Set(5X10ml)",
     "description": "Escape into a world of fragrance with our travel-sized perfume set, your perfect companion for every adventure",
     "tags": ["BoldScents", "ClassicCologne"],
-    "original_price": "Rs4000",
-    "discounted_price": "Rs2500"
+    "category": "all",
+    "original_price": "Rs2200",
+    "discounted_price": "Rs1550"
   },
   {
     "image": "/products/img1.jpg",
-    "title": "Pure Oud Spray",
+    "title": "Mushk e Sehra(50ml)",
     "description": "Indulge in the timeless allure of pure oud, a captivating fragrance that travels with you, wherever you go.",
-    "tags": ["CleanFragrance", "AromaticPerfume"],
+    "category": "all",
     "original_price": "Rs4000",
-    "discounted_price": "Rs2500"
+    "discounted_price": "Rs2500",
+    "tags": ["BoldScents", "ClassicCologne"]
   },
   {
     "image": "/products/img5.jpg",
-    "title": "Heer(for her)",
+    "title": "Heer(50ml)",
     "description": "Unveil your inner elegance with 'Heer'—a captivating fragrance that embodies grace, strength, and femininity.",
     "tags": ["love", "LuxuryPerfume"],
+    "category": "female",
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
   {
     "image": "/products/img3.jpg",
-    "title": "Gentleman",
+    "title": "Gentleman(50ml)",
     "description": "Embrace sophistication and confidence with 'Gentleman'—a fragrance that defines the essence of modern masculinity.",
-    "tags": ["ScentOfTheDay", "PerfumeForMen"],
+    "tags": ["MasculineEssence", "PerfumeForMen"],
+    "category": "male",
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
   {
     "image": "/products/img2.jpg",
-    "title": "Hinata",
+    "title": "Hinata(35ml)",
     "description": "Unleash your natural beauty and grace with 'Hinata'—a fragrance as delicate and captivating as you are.",
-    "tags": ["long lasting", "feminine", "love"],
-    "original_price": "Rs4000",
-    "discounted_price": "Rs2500"
+    "tags": ["long lasting", "feminine"],
+    "category": "kids",
+    "original_price": "Rs2500",
+    "discounted_price": "Rs1550"
   },
   {
     "image": "/products/img6.jpg",
-    "title": "Naruto",
+    "title": "Naruto(35ml)",
     "description": "Let your little one’s adventure begin with 'Naruto'—a fun, energizing fragrance that captures the spirit of imagination and play.",
     "tags": ["long lasting", "adventure"],
-    "original_price": "Rs4000",
-    "discounted_price": "Rs2500"
+    "category": "kids",
+    "original_price": "Rs2500",
+    "discounted_price": "Rs1550"
   }
 ]
