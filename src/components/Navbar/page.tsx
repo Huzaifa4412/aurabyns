@@ -70,10 +70,10 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              href="/contact"
+              href="/ContactUs"
               className="hover:text-gray-400 hover:font-extrabold hover:underline"
             >
-              Contact
+              Contact Us
             </Link>
           </div>
           <div className="md:hidden">

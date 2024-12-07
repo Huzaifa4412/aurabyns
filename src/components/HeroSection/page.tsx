@@ -3,6 +3,7 @@ import Styles from "./HomeSection.module.css";
 import Button from "../Button/page";
 import HomeFeatureText from "../HomeFeatureText/page";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -25,22 +26,24 @@ const HeroSection = () => {
             className={`${Styles.para}`}
             style={{ color: "var(--light-gray)" }}
           >
-            Your journey to finding the perfect property begins here. Explore
-            our listings to find the home that matches your dreams.
+            Your journey to finding the perfect Perfume end here. Explore our
+            listings to find the best perfume that matches your unique style.
           </p>
         </div>
         <div className="buttons-wrapper flex gap-[20px]">
-          <Button text="Learn More" color="var(--gray-8)" />
-          <Button text="Browse Properties" color="var(--golden-dark)" />
+          <Link href={"/"} className="w-[50%]">
+            <Button text="Learn More" color="var(--gray-8)" />
+          </Link>
+          <Link href="/ProductsPage" className="w-[50%]">
+            <Button text="Shop Now" color="var(--golden-dark)" />
+          </Link>
         </div>
         <div className={` ${Styles.featuresWrapper} flex gap-[20px] `}>
           <HomeFeatureText text="Happy Customers" numbers="200+" />
-          <HomeFeatureText text="Properties for Clients" numbers="100+" />
+          <HomeFeatureText text="fragrance for Clients" numbers="100+" />
           {typeof window !== "undefined" && window.innerWidth > 500 ? (
             <HomeFeatureText text="Experience" numbers="10+" />
-          ) : (
-            ""
-          )}
+          ) : null}
         </div>
       </div>
       <div className={`${Styles.rightPart}`}>
