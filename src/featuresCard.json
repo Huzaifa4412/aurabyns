@@ -1,34 +1,37 @@
 [
   {
-    "image": "/features/img4.jpg",
-    "title": "Travel Spray Set",
+    "image": "/products/img2.jpg",
+    "title": "Travel Spray Set(5X10ml)",
     "description": "Escape into a world of fragrance with our travel-sized perfume set, your perfect companion for every adventure",
     "tags": ["BoldScents", "ClassicCologne"],
+    "category": "all",
+    "original_price": "Rs2200",
+    "discounted_price": "Rs1550"
+  },
+  {
+    "image": "/products/img1.jpg",
+    "title": "Mushk e Sehra(50ml)",
+    "description": "Indulge in the timeless allure of pure oud, a captivating fragrance that travels with you, wherever you go.",
+    "tags": ["purity", "CleanFragrance"],
+    "category": "all",
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
-
   {
-    "image": "/features/img5.jpg",
-    "title": "Heer(for her)",
+    "image": "/products/img5.jpg",
+    "title": "Heer(50ml)",
     "description": "Unveil your inner elegance with 'Heer'—a captivating fragrance that embodies grace, strength, and femininity.",
-    "tags": ["love", "LuxuryPerfume"],
+    "tags": ["love", "DesignerFragrance"],
+    "category": "female",
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   },
   {
-    "image": "/features/img3.jpg",
-    "title": "Gentleman",
+    "image": "/products/img3.jpg",
+    "title": "Gentleman(50ml)",
     "description": "Embrace sophistication and confidence with 'Gentleman'—a fragrance that defines the essence of modern masculinity.",
-    "tags": ["ScentOfTheDay", "PerfumeForMen"],
-    "original_price": "Rs4000",
-    "discounted_price": "Rs2500"
-  },
-  {
-    "image": "/features/img2.jpg",
-    "title": "Hinata",
-    "description": "Unleash your natural beauty and grace with 'Hinata'—a fragrance as delicate and captivating as you are.",
-    "tags": ["long lasting", "feminine", "love"],
+    "tags": ["ScentOfTheDay", "MasculineEssence"],
+    "category": "male",
     "original_price": "Rs4000",
     "discounted_price": "Rs2500"
   }
