@@ -69,7 +69,19 @@ const Navbar = () => {
               href="/ProductsPage"
               className="hover:text-gray-400 hover:font-extrabold hover:underline"
             >
-              Our Products
+              All Products
+            </Link>
+            <Link
+              href="/Men"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Men
+            </Link>
+            <Link
+              href="/Kids"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Kids
             </Link>
             <Link
               href="/ContactUs"
