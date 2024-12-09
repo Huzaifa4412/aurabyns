@@ -7,7 +7,7 @@ function page() {
       {data.map((item, index) => {
         return (
           item.category === "female" && (
-            <FeaturesCard item={item} index={index} />
+            <FeaturesCard item={item} key={index} index={index} />
           )
         );
       })}

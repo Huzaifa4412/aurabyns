@@ -78,6 +78,12 @@ const Navbar = () => {
               Men
             </Link>
             <Link
+              href="/Female"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Female
+            </Link>
+            <Link
               href="/Kids"
               className="hover:text-gray-400 hover:font-extrabold hover:underline"
             >
