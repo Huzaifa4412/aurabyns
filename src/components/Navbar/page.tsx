@@ -127,6 +127,24 @@ const Navbar = () => {
               Our Products
             </Link>
             <Link
+              href="/Men"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Men
+            </Link>
+            <Link
+              href="/Female"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Female
+            </Link>
+            <Link
+              href="/Kids"
+              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+            >
+              Kids
+            </Link>
+            <Link
               href="/ContactUs
               "
               className="block hover:text-gray-400 hover:font-extrabold hover:underline"
