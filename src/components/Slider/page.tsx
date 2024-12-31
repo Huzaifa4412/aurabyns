@@ -30,8 +30,19 @@ export default function App() {
         <SwiperSlide>
           <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
             <img
-              src="/banner1.jpeg"
+              src="/saleBanner/img3.png"
               alt="Banner 1"
+              className="absolute inset-0 cursor-grab w-full h-full object-cover object-center"
+              width={1920}
+              height={1080}
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
+            <img
+              src="/banner1.jpeg"
+              alt="Banner 1.1"
               className="absolute inset-0 cursor-grab w-full h-full object-cover object-center"
               width={1920}
               height={1080}
