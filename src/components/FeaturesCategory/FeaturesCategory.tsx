@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Styles from "./FeaturesCategory.module.css";
 
@@ -8,14 +7,14 @@ const FeaturesCategories = (props: { text: string; path: string }) => {
       className={`${Styles.featuresCard} flex flex-col items-center gap-[20px] justify-center w-[455px] h-[212px] relative px-[40px] py-[20px] rounded-[12px] border border-[var(--stoke-gray)]`}
       style={{ backgroundColor: "var(--gray-box)" }}
     >
-      <Image
+      <img
         src={"/Features_Category/arrow.svg"}
         alt={"Arrow Icon"}
         width={21}
         height={21}
         className={` ${Styles.arrow} w-[21px] absolute right-[20px] top-[20px]`}
       />
-      <Image
+      <img
         src={props.path}
         width={80}
         height={80}

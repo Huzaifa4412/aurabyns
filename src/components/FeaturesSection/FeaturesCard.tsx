@@ -1,6 +1,5 @@
 import React from "react";
 import Styles from "./featuresCard.module.css";
-import Image from "next/image";
 
 import Button from "../Button/page";
 import Link from "next/link";
@@ -24,7 +23,7 @@ const FeaturesCard = ({
       id={item.title.replace(" ", "_").trim() + index}
       key={index}
     >
-      <Image
+      <img
         src={item.image}
         alt={item.title}
         className="rounded-[10px] w-[432px] h-[318px] object-cover"

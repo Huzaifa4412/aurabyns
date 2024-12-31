@@ -2,7 +2,6 @@
 import React, { useRef, useState } from "react";
 import Styles from "./Navbar.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 import { RiCloseLargeFill } from "react-icons/ri";
 import { useGSAP } from "@gsap/react";
@@ -50,7 +49,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center h-16">
           <div className="flex items-center w-[120px] lg:w-[150px]">
             <Link href="/" className="text-xl font-bold">
-              <Image
+              <img
                 src={"/mainLogo.svg"}
                 alt="Main Logo"
                 width={150}
@@ -105,7 +104,7 @@ const Navbar = () => {
               {isOpen ? (
                 <RiCloseLargeFill size={30} />
               ) : (
-                <Image
+                <img
                   src={"menuIcon.svg"}
                   width={50}
                   height={50}

@@ -1,10 +1,9 @@
-import Image from "next/image";
 import React from "react";
 function WhatsappIcon() {
   return (
     <div className="fixed left-5 z-[999] bottom-[5%]">
       <a href="https://wa.link/oi406v">
-        <Image
+        <img
           src={"whatsappIcon.svg"}
           alt="Whatsapp Icon"
           width={80}

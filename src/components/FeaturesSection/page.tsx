@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Styles from "./featureSection.module.css";
-import Image from "next/image";
 import Button from "../Button/page";
 import FeaturesCard from "./FeaturesCard";
 import data from "@/featuresCard.json";
@@ -22,7 +21,7 @@ const FeatureSection = () => {
     <div className={`${Styles.featureSection} flex flex-col gap-[80px]`}>
       <div className={`${Styles.heading_part} flex justify-between`}>
         <div className="content w-full gap-2 mb-5 md:w-[60%]">
-          <Image
+          <img
             src={"/Features_Section/Abstract Design.png"}
             alt={""}
             width={80}

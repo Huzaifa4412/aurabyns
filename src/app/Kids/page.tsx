@@ -6,7 +6,9 @@ function page() {
     <div className="products flex flex-wrap gap-5 p-5 items-center justify-center">
       {data.map((item, index) => {
         return (
-          item.category === "kids" && <FeaturesCard item={item} index={index} />
+          item.category === "kids" && (
+            <FeaturesCard item={item} index={index} key={index} />
+          )
         );
       })}
     </div>

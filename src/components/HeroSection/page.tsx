@@ -2,7 +2,6 @@ import React from "react";
 import Styles from "./HomeSection.module.css";
 import Button from "../Button/page";
 import HomeFeatureText from "../HomeFeatureText/page";
-import Image from "next/image";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -47,7 +46,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className={`${Styles.rightPart} rounded-2xl`}>
-        <Image
+        <img
           className={`${Styles.heroImage} rounded-xl object-cover h-full w-full `}
           src="/hero-image-3.jpeg"
           alt="hero-image/perfume"
