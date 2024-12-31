@@ -61,31 +61,41 @@ const Timer = ({ launchDate }: { launchDate: string }) => {
   }
 
   return (
-    <div className="grid md:grid-cols-4 w-max grid-cols-2 justify-center lg:justify-start my-14 gap-3">
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
-        {timeLeft.days}
-        <small className="text-xs lg:text-sm uppercase font-semibold text-white">
-          Days
-        </small>
-      </span>
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
-        {timeLeft.hours}
-        <small className="text-xs lg:text-sm uppercase font-semibold text-white">
-          Hours
-        </small>
-      </span>
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow text-5xl w-36 py-3 shadow-lg rounded-lg">
-        {timeLeft.minutes}
-        <small className="text-xs lg:text-sm uppercase font-semibold text-white">
-          Minutes
-        </small>
-      </span>
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
-        {timeLeft.seconds}
-        <small className="text-xs lg:text-sm uppercase font-semibold text-white">
-          Seconds
-        </small>
-      </span>
+    <div className="flex flex-col my-8 items-center justify-center">
+      <img
+        src={"/Features_Section/Abstract Design.png"}
+        alt={""}
+        width={80}
+        height={50}
+      />
+      <h2 className="text-[48px] font-semibold">Sale Ending In</h2>
+
+      <div className="grid md:grid-cols-4 w-max grid-cols-2 justify-center lg:justify-start my-14 gap-3">
+        <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
+          {timeLeft.days}
+          <small className="text-xs lg:text-sm uppercase font-semibold text-white">
+            Days
+          </small>
+        </span>
+        <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
+          {timeLeft.hours}
+          <small className="text-xs lg:text-sm uppercase font-semibold text-white">
+            Hours
+          </small>
+        </span>
+        <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow text-5xl w-36 py-3 shadow-lg rounded-lg">
+          {timeLeft.minutes}
+          <small className="text-xs lg:text-sm uppercase font-semibold text-white">
+            Minutes
+          </small>
+        </span>
+        <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
+          {timeLeft.seconds}
+          <small className="text-xs lg:text-sm uppercase font-semibold text-white">
+            Seconds
+          </small>
+        </span>
+      </div>
     </div>
   );
 };
