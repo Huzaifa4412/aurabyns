@@ -13,7 +13,7 @@ const ComingSoon = () => {
         </span>
         <div className="content flex flex-col items-center justify-center mt-5">
           <img
-            src="/saleBanner/img1.jpeg"
+            src="/saleBanner/img.jpg"
             alt=""
             className="w-full h-full object-cover object-center rounded-3xl min-w-72 min-h-96"
           />
