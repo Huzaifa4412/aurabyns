@@ -62,25 +62,25 @@ const Timer = ({ launchDate }: { launchDate: string }) => {
 
   return (
     <div className="grid md:grid-cols-4 w-max grid-cols-2 justify-center lg:justify-start my-14 gap-3">
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  lg:text-5xl w-36 py-3 shadow-lg rounded-lg">
+      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
         {timeLeft.days}
         <small className="text-xs lg:text-sm uppercase font-semibold text-white">
           Days
         </small>
       </span>
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  lg:text-5xl w-36 py-3 shadow-lg rounded-lg">
+      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
         {timeLeft.hours}
         <small className="text-xs lg:text-sm uppercase font-semibold text-white">
           Hours
         </small>
       </span>
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow lg:text-5xl w-36 py-3 shadow-lg rounded-lg">
+      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow text-5xl w-36 py-3 shadow-lg rounded-lg">
         {timeLeft.minutes}
         <small className="text-xs lg:text-sm uppercase font-semibold text-white">
           Minutes
         </small>
       </span>
-      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow text-3xl lg:text-5xl w-36 py-3 shadow-lg rounded-lg">
+      <span className="shrink-0 flex flex-col justify-center items-center bg-yellow-500 text-yellow  text-5xl w-36 py-3 shadow-lg rounded-lg">
         {timeLeft.seconds}
         <small className="text-xs lg:text-sm uppercase font-semibold text-white">
           Seconds
