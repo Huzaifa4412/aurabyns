@@ -12,19 +12,12 @@ const ComingSoon = () => {
           New Year!
         </span>
         <div className="content flex flex-col items-center justify-center mt-5">
-          {window.innerWidth > 500 ? (
-            <img
-              src="/saleBanner/img.jpg"
-              alt=""
-              className="w-full h-full object-cover object-center rounded-3xl min-w-72 min-h-96"
-            />
-          ) : (
-            <img
-              src="/saleBanner/img1.jpeg"
-              alt=""
-              className="w-full h-full object-cover object-center rounded-3xl min-w-72 min-h-96"
-            />
-          )}
+          <img
+            src="/saleBanner/img1.jpeg"
+            alt=""
+            className="w-full h-full object-cover object-center rounded-3xl min-w-72 min-h-96"
+          />
+
           <CountDown launchDate="2025-02-01T12:00:00" />
         </div>
       </h2>
