@@ -9,9 +9,9 @@ const page = () => {
   return (
     <>
       <Slider />
+      <ComingSoon />
       <HeroSection />
       <FeaturesCategory />
-      <ComingSoon />
       <FeatureSection />
     </>
   );
