@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./cart.module.css";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,6 +14,25 @@ import {
 
 const Page = () => {
   const { cart } = useSelector((state: RootState) => state.allCart);
+
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  const calculateTotalPrice = () => {
+    const total = cart.reduce((total, item) => {
+      return (total =
+        total +
+        parseInt(
+          item.discounted_price.slice(2, item.discounted_price.length - 1)
+        ) *
+          item.qty);
+    }, 0);
+    console.log(total);
+    setTotalPrice(total);
+  };
+
+  useEffect(() => {
+    calculateTotalPrice();
+  }, [cart]);
 
   return (
     <div className="cart max-w-[1440px] mx-auto my-8">
@@ -41,7 +60,7 @@ const Page = () => {
           <div className="subtotal font-bold text-[24px] ">Order Summary</div>
           <div className="sub_total w-full flex items-center justify-between">
             <div className="text-[#000000]/60 text-2xl invert">Sub Total</div>
-            <div className="font-bold text-2xl">$565</div>
+            <div className="font-bold text-2xl">{totalPrice}</div>
           </div>
           {/* <div className="discount w-full flex items-center justify-between">
             <div className="text-[#000000]/60 text-2xl invert">Discount</div>
@@ -51,12 +70,14 @@ const Page = () => {
             <div className="text-[#000000]/60 text-2xl invert">
               Delivery Fee
             </div>
-            <div className="font-bold text-2xl">$15</div>
+            <div className="font-medium text-slate-300 text-lg">
+              {"Free For Now"}
+            </div>
           </div>
           <hr className="text-[#000000/60]" />
           <div className="total w-full flex items-center justify-between">
             <div className="text-[#000000]/60 text-2xl invert">Total</div>
-            <div className="font-bold text-2xl">$565</div>
+            <div className="font-bold text-2xl">{totalPrice}</div>
           </div>
           <div className="checkout_btn">
             <button className="button flex items-center justify-center gap-3 w-full px-[24px] py-[12px] text-xl rounded-[62px] text-white bg-gradient-to-r from-[#533568] to-[#211833]">
