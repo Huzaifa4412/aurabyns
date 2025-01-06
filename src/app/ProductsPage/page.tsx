@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import data from "@/All_Data.json";
 import FeaturesCard from "../../components/FeaturesSection/FeaturesCard";

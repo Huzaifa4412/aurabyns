@@ -6,7 +6,7 @@ import Slider from "../components/Slider/page";
 import Timer from "@/components/ComingSoon/Timer";
 // import ComingSoon from "@/components/ComingSoon/ComingSoon";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Slider />
@@ -22,4 +22,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

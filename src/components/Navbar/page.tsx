@@ -6,8 +6,13 @@ import Link from "next/link";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { HiMiniShoppingCart } from "react-icons/hi2";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/app/store"; // Import the RootState type
 const Navbar = () => {
   const navRef = useRef(null);
+
+  const { cart } = useSelector((state: RootState) => state.allCart);
 
   // Creating Toggle Functionality for navigation
   const [isOpen, setIsOpen] = useState(false);
@@ -60,39 +65,47 @@ const Navbar = () => {
           <div className="hidden nav-items duration-1000 items-center md:flex space-x-4 text-xl">
             <Link
               href="/"
-              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Home
             </Link>
             <Link
               href="/ProductsPage"
-              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="hover:text-yellow-500 hover:font-bold hover:underline"
             >
               All Products
             </Link>
             <Link
               href="/Men"
-              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Men
             </Link>
             <Link
               href="/Female"
-              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Female
             </Link>
             <Link
               href="/Kids"
-              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Kids
             </Link>
             <Link
               href="/ContactUs"
-              className="hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Contact Us
+            </Link>
+            <Link href={"/Cart"}>
+              <div className="cart relative">
+                <HiMiniShoppingCart color="var(--golden-dark)" size={30} />
+                <span className="w-4 p-1 box-content h-4 bg-yellow-500 rounded-full absolute top-0 translate-x-1/2 translate-y-1/2 right-0 grid place-items-center text-white text-xs font-bold">
+                  {cart.length}
+                </span>
+              </div>
             </Link>
           </div>
           <div className="md:hidden">
@@ -121,41 +134,41 @@ const Navbar = () => {
           >
             <Link
               href="/"
-              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Home
             </Link>
             <Link
               href="/ProductsPage"
-              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Our Products
             </Link>
             <Link
               href="/Men
               "
-              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Men
             </Link>
             <Link
               href="/Female
               "
-              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Female
             </Link>
             <Link
               href="/Kids
               "
-              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Kids
             </Link>
             <Link
               href="/ContactUs
               "
-              className="block hover:text-gray-400 hover:font-extrabold hover:underline"
+              className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Contact
             </Link>

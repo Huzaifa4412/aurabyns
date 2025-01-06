@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 import Styles from "./contactUs.module.css";
 
@@ -37,7 +36,7 @@ export default function SimpleContactForm() {
       className="min-h-scree p-4 sm:p-6 flex flex-col gap-12 items-center justify-center"
     >
       <div className={`${Styles.content} flex flex-col my-12`}>
-        <Image
+        <img
           src={"/Abstract_Design.png"}
           alt={""}
           width={80}

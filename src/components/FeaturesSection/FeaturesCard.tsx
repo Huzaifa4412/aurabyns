@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import Styles from "./featuresCard.module.css";
 
 import Button from "../Button/page";
-import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/features/cartSlice";
+// import Link from "next/link";
+
 const FeaturesCard = ({
   item,
   index,
@@ -14,13 +18,33 @@ const FeaturesCard = ({
     tags: string[];
     discounted_price: string;
     original_price: string;
+    qty: number;
   };
   index: number;
 }) => {
+  const dispatch = useDispatch();
+  const id = item.title.replace(/ /g, "_").trim() + index;
+  const CartHandler = (
+    value: {
+      image: string;
+      title: string;
+      description: string;
+      tags: string[];
+      discounted_price: string;
+      original_price: string;
+      qty: number;
+    },
+    id: string
+  ) => {
+    const temp = { ...value, id };
+    dispatch(addToCart(temp));
+  };
+
   return (
     <div
       className={`${Styles.featuresCard}`}
-      id={item.title.replace(" ", "_").trim() + index}
+      id={id}
+      // id={id}
       key={index}
     >
       <img
@@ -63,14 +87,18 @@ const FeaturesCard = ({
           </div>
         </div>
         <div className={` ${Styles.button} rightPart w-full`}>
-          <Link
+          {/* <Link
             href={{
               pathname: "/OrderNow",
               query: { title: item.title.trim(), id: index },
             }}
           >
-            <Button text="Order Now" color="var(--golden-dark)" />
-          </Link>
+          <Button text="Order Now" color="var(--golden-dark)" />
+          </Link> */}
+
+          <div onClick={() => CartHandler(item, id)}>
+            <Button text="Add to Cart" color="var(--golden-dark)" />
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Integral_CF";
+  src: url("/fonts/Fontspring-DEMO-integralcf-bold.otf");
+}
+
+.main_heading {
+  font-family: Integral_CF;
+  font-size: 28px;
+  font-weight: bold;
+}
