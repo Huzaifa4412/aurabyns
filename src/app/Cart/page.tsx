@@ -146,7 +146,7 @@ const CartItems = ({ item }: { item: ProductData }) => {
           </div>
         </div>
       </div>
-      <hr className="text-slate-300  " />
+      <hr className="text-slate-300" />
     </>
   );
 };
