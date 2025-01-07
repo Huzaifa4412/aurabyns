@@ -5,6 +5,7 @@ import Styles from "./featuresCard.module.css";
 import Button from "../Button/page";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/features/cartSlice";
+import { toast } from "react-toastify";
 // import Link from "next/link";
 
 const FeaturesCard = ({
@@ -96,7 +97,12 @@ const FeaturesCard = ({
           <Button text="Order Now" color="var(--golden-dark)" />
           </Link> */}
 
-          <div onClick={() => CartHandler(item, id)}>
+          <div
+            onClick={() => {
+              toast.success("Item Added to Cart ");
+              CartHandler(item, id);
+            }}
+          >
             <Button text="Add to Cart" color="var(--golden-dark)" />
           </div>
         </div>

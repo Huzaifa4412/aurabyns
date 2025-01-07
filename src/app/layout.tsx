@@ -5,6 +5,8 @@ import WhatsappIcon from "../components/Whatsapp/WhatsappIcon";
 import Footer from "@/components/Footer/page";
 import Navbar from "@/components/Navbar/page";
 import CartProvider from "./CartProvider";
+import { ToastContainer } from "react-toastify";
+import { Bounce } from "react-toastify";
 const urbanist = Urbanist({
   subsets: ["latin", "latin-ext"], // Specify character subsets
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -36,6 +38,19 @@ export default function RootLayout({
           {children}
           <Footer />
         </CartProvider>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Bounce}
+        />
       </body>
     </html>
   );
