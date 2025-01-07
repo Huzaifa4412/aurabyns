@@ -6,6 +6,7 @@ import Button from "../Button/page";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/features/cartSlice";
 import { toast } from "react-toastify";
+import Link from "next/link";
 // import Link from "next/link";
 
 const FeaturesCard = ({
@@ -67,7 +68,8 @@ const FeaturesCard = ({
         ))}
       </div>
       <div
-        className={`${Styles.priceContainer} flex gap-[50px] items-center justify-center`}
+        className={`${Styles.priceContainer} flex sm
+          :gap-[50px] items-center justify-between gap-5`}
       >
         <div className="leftPart w-[30%]">
           <div
@@ -99,7 +101,9 @@ const FeaturesCard = ({
 
           <div
             onClick={() => {
-              toast.success("Item Added to Cart ");
+              <Link href={"/Cart"}>
+                {toast.success("Item Added to Cart ")}
+              </Link>;
               CartHandler(item, id);
             }}
           >

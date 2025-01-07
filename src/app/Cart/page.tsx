@@ -26,7 +26,6 @@ const Page = () => {
         ) *
           item.qty);
     }, 0);
-    console.log(total);
     setTotalPrice(total);
   };
 
@@ -90,14 +89,16 @@ const Page = () => {
             <div className="font-bold text-lg sm:text-2xl">{totalPrice}</div>
           </div>
           <div className="checkout_btn">
-            <button className="button flex items-center justify-center gap-3 w-full px-4 sm:px-[24px] py-2 sm:py-[12px] text-lg sm:text-xl rounded-[62px] text-white bg-gradient-to-r from-[#533568] to-[#211833]">
-              Go to Checkout
-              <img
-                src="/Cart/arrow.svg"
-                alt="arrow"
-                className="w-4 h-4 sm:w-5 sm:h-5"
-              />
-            </button>
+            <Link href={"/CheckOut"}>
+              <button className="button flex items-center justify-center gap-3 w-full px-4 sm:px-[24px] py-2 sm:py-[12px] text-lg sm:text-xl rounded-[62px] text-white bg-gradient-to-r from-[#533568] to-[#211833]">
+                Go to Checkout
+                <img
+                  src="/Cart/arrow.svg"
+                  alt="arrow"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
+                />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
