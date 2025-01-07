@@ -126,6 +126,16 @@ const Navbar = () => {
               )}
             </button>
           </div>
+          <div className="md:hidden">
+            <Link href={"/Cart"}>
+              <div className="cart relative md:hidden w-max flex items-center justify-center">
+                <HiMiniShoppingCart color="var(--golden-dark)" size={30} />
+                <span className="w-4 p-1 box-content h-4 bg-yellow-500 rounded-full absolute top-0 translate-x-1/2 translate-y-1/2 right-0 grid place-items-center text-white text-xs font-bold">
+                  {cart.length}
+                </span>
+              </div>
+            </Link>
+          </div>
         </div>
         {isOpen && (
           <div
