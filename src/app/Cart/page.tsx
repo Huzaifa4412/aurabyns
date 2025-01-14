@@ -22,7 +22,7 @@ const Page = () => {
       return (total =
         total +
         parseInt(
-          item.discounted_price.slice(2, item.discounted_price.length - 1)
+          item.discounted_price.slice(1, item.discounted_price.length - 1)
         ) *
           item.qty);
     }, 0);
