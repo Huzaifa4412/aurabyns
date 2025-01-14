@@ -137,7 +137,7 @@ const CartItems = ({ item }: { item: ProductData }) => {
                 {item.title}
               </div>
               <div className="p_price font-bold text-xl sm:text-[24px]">
-                Rs : {Number(item.discounted_price.slice(2, -1)) * item.qty}
+                Rs : {Number(item.discounted_price.slice(1, -1)) * item.qty}
               </div>
             </div>
             <div className="actionSec w-full sm:w-max flex flex-row sm:flex-col justify-between items-center sm:items-end mt-2 sm:mt-0">
