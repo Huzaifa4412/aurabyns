@@ -9,7 +9,9 @@ export default function CheckOut() {
   const calcTotalPrice = () => {
     return cart.reduce(
       (acc, curr) =>
-        acc + Number(curr.discounted_price.slice(1, -1)) * curr.qty,
+        acc +
+        Number(curr.discounted_price.slice(2, curr.discounted_price.length)) *
+          curr.qty,
       0
     );
   };
@@ -129,7 +131,7 @@ export default function CheckOut() {
             <textarea
               id="products"
               name="products"
-              value={`${formattedData}\nTotal Price : Rs ${calcTotalPrice()}`}
+              value={`${formattedData}\n\nTotal Price : Rs ${calcTotalPrice()}`}
               className="w-full bg-zinc-900 border border-zinc-800 text-white rounded-md px-4 py-3 min-h-[100px]"
               placeholder="Your Products"
               readOnly

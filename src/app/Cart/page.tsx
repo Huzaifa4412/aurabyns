@@ -21,9 +21,7 @@ const Page = () => {
     const total = cart.reduce((total, item) => {
       return (total =
         total +
-        parseInt(
-          item.discounted_price.slice(1, item.discounted_price.length - 1)
-        ) *
+        parseInt(item.discounted_price.slice(2, item.discounted_price.length)) *
           item.qty);
     }, 0);
     setTotalPrice(total);
@@ -71,7 +69,7 @@ const Page = () => {
             <div className="text-[#000000]/60 text-lg sm:text-2xl invert">
               Sub Total
             </div>
-            <div className="font-bold text-lg sm:text-2xl">{totalPrice}</div>
+            <div className="font-bold text-lg sm:text-2xl">Rs {totalPrice}</div>
           </div>
           <div className="Delivery_Fee w-full flex items-center justify-between">
             <div className="text-[#000000]/60 text-lg sm:text-2xl invert">
@@ -86,7 +84,7 @@ const Page = () => {
             <div className="text-[#000000]/60 text-lg sm:text-2xl invert">
               Total
             </div>
-            <div className="font-bold text-lg sm:text-2xl">{totalPrice}</div>
+            <div className="font-bold text-lg sm:text-2xl">Rs {totalPrice}</div>
           </div>
           <div className="checkout_btn">
             <Link href={"/CheckOut"}>
@@ -137,7 +135,10 @@ const CartItems = ({ item }: { item: ProductData }) => {
                 {item.title}
               </div>
               <div className="p_price font-bold text-xl sm:text-[24px]">
-                Rs : {Number(item.discounted_price.slice(1, -1)) * item.qty}
+                Rs :{" "}
+                {Number(
+                  item.discounted_price.slice(2, item.discounted_price.length)
+                ) * item.qty}
               </div>
             </div>
             <div className="actionSec w-full sm:w-max flex flex-row sm:flex-col justify-between items-center sm:items-end mt-2 sm:mt-0">
