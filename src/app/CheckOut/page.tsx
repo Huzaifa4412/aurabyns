@@ -9,7 +9,7 @@ export default function CheckOut() {
   const calcTotalPrice = () => {
     return cart.reduce(
       (acc, curr) =>
-        acc + Number(curr.discounted_price.slice(2, -1)) * curr.qty,
+        acc + Number(curr.discounted_price.slice(1, -1)) * curr.qty,
       0
     );
   };

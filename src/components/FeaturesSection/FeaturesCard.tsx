@@ -7,8 +7,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/features/cartSlice";
 import { toast } from "react-toastify";
 import Link from "next/link";
-// import Link from "next/link";
-
+import { useRouter } from "next/navigation";
 const FeaturesCard = ({
   item,
   index,
@@ -41,6 +40,7 @@ const FeaturesCard = ({
     const temp = { ...value, id };
     dispatch(addToCart(temp));
   };
+  const router = useRouter();
 
   return (
     <div
@@ -102,7 +102,14 @@ const FeaturesCard = ({
           <div
             onClick={() => {
               <Link href={"/Cart"}>
-                {toast.success("Item Added to Cart ")}
+                {toast.success("Item Added to Cart ", {
+                  onClick: () => {
+                    router.push("/Cart");
+                  },
+                  style: {
+                    cursor: "pointer",
+                  },
+                })}
               </Link>;
               CartHandler(item, id);
             }}

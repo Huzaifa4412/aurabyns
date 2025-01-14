@@ -36,7 +36,6 @@ const cartSlice = createSlice({
         desQuantity: (state, action) => {
             const itemIdx = state.cart.findIndex((item) => item.id === action.payload.id);
 
-            console.log(itemIdx)
             if (state.cart[itemIdx].qty >= 1) {
 
                 state.cart[itemIdx].qty -= 1;
