@@ -1,32 +1,12 @@
 [
   {
-    "image": "/products/img2.jpg",
-    "title": "Travel Spray Set(5X10ml)",
-    "description": "Escape into a world of fragrance with our travel-sized perfume set.",
-    "tags": ["BoldScents", "ClassicCologne"],
-    "category": "all",
-    "original_price": "Rs2300",
-    "discounted_price": "Rs1550",
-    "qty": 0
-  },
-  {
-    "image": "/products/img1.jpg",
-    "title": "Mushk e Sehra(50ml)",
-    "description": "Indulge in the timeless allure of pure oud, a captivating fragrance that travels with you, wherever you go.",
-    "tags": ["purity", "CleanFragrance"],
-    "category": "all",
-    "original_price": "Rs3000",
-    "discounted_price": "Rs2100",
-    "qty": 0
-  },
-  {
     "image": "/products/img5.jpg",
     "title": "Heer(50ml)",
     "description": "Unveil your inner elegance with 'Heer'—a captivating fragrance that embodies grace, strength, and femininity.",
     "tags": ["love", "DesignerFragrance"],
     "category": "female",
     "original_price": "Rs3000",
-    "discounted_price": "Rs2200",
+    "discounted_price": "Rs1900",
     "qty": 0
   },
   {
@@ -36,7 +16,7 @@
     "tags": ["ScentOfTheDay", "MasculineEssence"],
     "category": "male",
     "original_price": "Rs3000",
-    "discounted_price": "Rs2100",
+    "discounted_price": "Rs1800",
     "qty": 0
   },
   {
@@ -46,7 +26,7 @@
     "tags": ["long lasting", "feminine"],
     "category": "kids",
     "original_price": "Rs2200",
-    "discounted_price": "Rs1400",
+    "discounted_price": "Rs1300",
     "qty": 0
   },
   {
@@ -56,7 +36,7 @@
     "tags": ["long lasting", "adventure"],
     "category": "kids",
     "original_price": "Rs2200",
-    "discounted_price": "Rs1400",
+    "discounted_price": "Rs1300",
     "qty": 0
   }
 ]

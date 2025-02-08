@@ -40,12 +40,6 @@
 
 }
 
-@media screen and (max-width: 1440px) {
-  .featuresCard {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 1370px) {
   .featuresCard {
     width: 350px;

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +11,23 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
+const useWindowWidth = () => {
+  const [width, setWidth] = useState<number | null>(null);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
+};
 export default function App() {
+  const width = useWindowWidth();
   return (
     <>
       <Swiper
@@ -27,17 +43,20 @@ export default function App() {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
-            <img
-              src="/saleBanner/img3.png"
-              alt="Banner 1"
-              className="absolute inset-0 cursor-grab w-full h-full object-cover object-center"
-              width={1920}
-              height={1080}
-            />
-          </div>
-        </SwiperSlide>
+        {width && width > 440 && (
+          <SwiperSlide>
+            <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
+              <img
+                src="/saleBanner/banner4.png"
+                alt="Banner 1"
+                className="absolute inset-0 cursor-grab w-full h-full object-cover object-right"
+                width={1920}
+                height={1080}
+              />
+            </div>
+          </SwiperSlide>
+        )}
+
         <SwiperSlide>
           <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
             <img

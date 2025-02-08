@@ -144,12 +144,14 @@ const Navbar = () => {
           >
             <Link
               href="/"
+              onClick={() => setIsOpen(!isOpen)}
               className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Home
             </Link>
             <Link
               href="/ProductsPage"
+              onClick={() => setIsOpen(!isOpen)}
               className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Our Products
@@ -157,6 +159,7 @@ const Navbar = () => {
             <Link
               href="/Men
               "
+              onClick={() => setIsOpen(!isOpen)}
               className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Men
@@ -164,6 +167,7 @@ const Navbar = () => {
             <Link
               href="/Female
               "
+              onClick={() => setIsOpen(!isOpen)}
               className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Female
@@ -171,6 +175,7 @@ const Navbar = () => {
             <Link
               href="/Kids
               "
+              onClick={() => setIsOpen(!isOpen)}
               className="block hover:text-yellow-500 hover:font-bold hover:underline"
             >
               Kids
@@ -179,6 +184,7 @@ const Navbar = () => {
               href="/ContactUs
               "
               className="block hover:text-yellow-500 hover:font-bold hover:underline"
+              onClick={() => setIsOpen(!isOpen)}
             >
               Contact
             </Link>

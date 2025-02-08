@@ -6,7 +6,7 @@
     "tags": ["BoldScents", "ClassicCologne"],
     "category": "all",
     "original_price": "Rs2300",
-    "discounted_price": "Rs1550",
+    "discounted_price": "Rs1500",
     "qty": 0
   },
   {
@@ -16,7 +16,7 @@
     "tags": ["purity", "CleanFragrance"],
     "category": "all",
     "original_price": "Rs3000",
-    "discounted_price": "Rs2100",
+    "discounted_price": "Rs1800",
     "qty": 0
   },
   {
@@ -26,7 +26,7 @@
     "tags": ["love", "DesignerFragrance"],
     "category": "female",
     "original_price": "Rs3000",
-    "discounted_price": "Rs2200",
+    "discounted_price": "Rs1900",
     "qty": 0
   },
   {
@@ -36,7 +36,7 @@
     "tags": ["ScentOfTheDay", "MasculineEssence"],
     "category": "male",
     "original_price": "Rs3000",
-    "discounted_price": "Rs2100",
+    "discounted_price": "Rs1800",
     "qty": 0
   },
   {
@@ -46,7 +46,7 @@
     "tags": ["long lasting", "feminine"],
     "category": "kids",
     "original_price": "Rs2200",
-    "discounted_price": "Rs1400",
+    "discounted_price": "Rs1300",
     "qty": 0
   },
   {
@@ -56,7 +56,7 @@
     "tags": ["long lasting", "adventure"],
     "category": "kids",
     "original_price": "Rs2200",
-    "discounted_price": "Rs1400",
+    "discounted_price": "Rs1300",
     "qty": 0
   }
 ]
