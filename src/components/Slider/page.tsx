@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
@@ -46,12 +47,13 @@ export default function App() {
         {width && width > 440 && (
           <SwiperSlide>
             <div className="relative w-full h-[450px] sm:h-[500px] lg:h-[600px] xl:h-[800px]">
-              <img
-                src="/saleBanner/banner4.png"
+              <Image
+                src="/saleBanner/banner4.webp"
                 alt="Banner 1"
                 className="absolute inset-0 cursor-grab w-full h-full object-cover object-right"
                 width={1920}
                 height={1080}
+                priority={true}
               />
             </div>
           </SwiperSlide>

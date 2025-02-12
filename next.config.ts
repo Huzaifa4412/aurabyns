@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
   output: 'export', // Enable static export
   eslint: {
     ignoreDuringBuilds: true,
-  }
+  },
+  images: {
+    unoptimized: true,  // Disable Next.js optimization
+  },
 };
 
 export default nextConfig;
