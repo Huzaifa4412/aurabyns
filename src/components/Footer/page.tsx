@@ -92,7 +92,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} AuraByNS. All rights reserved.
           </p>
           <p className="mb-4 sm:mb-0 text-xl ml-10 lg:w-1/3">
-            &copy; {new Date().getFullYear()}💓 Love by Triangle Marketing.
+            &copy; {new Date().getFullYear()}💓 Love by Celusio Solutions.
           </p>
           {/* Social Media Links */}
           <div className="flex space-x-4 lg:w-1/3 justify-end">
