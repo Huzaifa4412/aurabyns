@@ -96,10 +96,7 @@ const Footer = () => {
           </p>
           {/* Social Media Links */}
           <div className="flex space-x-4 lg:w-1/3 justify-end">
-            <Link
-              href="https://www.facebook.com/share/KsFYCPVx28QBsSX1/?mibextid=LQQJ4d"
-              target="_blank"
-            >
+            <Link href="#" target="_blank">
               <FaFacebook
                 className="hover:text-gray-300 cursor-pointer"
                 size={20}
@@ -111,10 +108,7 @@ const Footer = () => {
                 size={20}
               />
             </Link>
-            <Link
-              href="https://www.instagram.com/aurabyns?igsh=enYycTJnaTg2amdq"
-              target="_blank"
-            >
+            <Link href="#" target="_blank">
               <FaInstagram
                 className="hover:text-gray-300 cursor-pointer"
                 size={20}
