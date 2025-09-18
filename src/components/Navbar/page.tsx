@@ -115,7 +115,7 @@ const Navbar = () => {
                             </div>
                         </Link>
                         <Link href={"/studio"}>
-                            <MdAccountCircle />
+                            <MdAccountCircle size={30} />
                         </Link>
                     </div>
                     <div className="md:hidden">
