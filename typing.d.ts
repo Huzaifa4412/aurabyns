@@ -23,3 +23,19 @@ export interface ProductData {
     qty: number;
     id: string
 }
+
+export interface Category {
+    name: string;
+    id: string;
+}
+
+export interface Product {
+    name: string;
+    mainImage: string;
+    relatedImages: string[];
+    description: string;
+    price: number;
+    discountedPrice: number;
+    tags: string[];
+    category: Category;
+}
