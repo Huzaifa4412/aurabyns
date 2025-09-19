@@ -7,7 +7,7 @@ export const categories = {
             name: 'name',
             title: 'Category Name',
             type: 'string',
-            validation: Rule => Rule.required()
+            validation: (Rule: any) => Rule.required()
         },
         {
             name: 'categoryImage',
